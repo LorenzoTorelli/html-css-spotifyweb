@@ -13,13 +13,13 @@
 }
 
 .container {
-    height: calc(100vh - 150px);
+    height: calc(100vh - 100px);
 }
 
 .left-bar {
     width: 50px;
     float: left;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 100px);
     display: flex;
     background-color: black;
     justify-content: space-between;
@@ -110,7 +110,7 @@
 
 .container-main {
     padding-top: 70px;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 100px);
     margin-right: 0;
     float: right;
     width: 100%;
@@ -121,16 +121,69 @@
 /* ******** footer ******** */
 
 .container-footer {
-    height: 150px;
-    /* position:fixed;  */
-    bottom: 0;
-    /* left: 0; */
+    height: 100px;
     width: 100%;
-    z-index: 1;
+    display: flex;
+    padding: 20px 10px;
 }
 
+.container-footer .side-footer {
+    width: 30%;
+    background-color: blue;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
 
-/* ******** medaquery ******** */
+}
+
+.container-footer .central-footer {
+    width: 40%;
+    height: 100%;
+    background-color: grey;
+}
+
+.container-footer .side-footer img {
+    width: 60px;
+}
+
+.container-footer .element {
+    color: white;
+    align-self: center;
+    font-size: 12px;
+
+
+}
+.container-footer .element h5 {
+    color: grey;
+
+}
+#ico {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+
+}
+
+#ico i {
+    margin-left: 15px;
+    color: grey;
+}
+
+.central-footer .row-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 250px;
+    margin: auto;
+}
+
+.central-footer .row-top i{
+    color: white;
+}
+.central-footer .row-top #play {
+    font-size: 25px;
+}
+/* ******** mediaquery ******** */
 
 @media  screen and (min-width: 576px) {
     .left-bar {
@@ -147,7 +200,6 @@
     } 
     .left-bar .nav-item a {
         display: inline;
-
     }
 
     #home {
@@ -199,7 +251,9 @@
 }
 
 @media  screen and (min-width: 768px) {
-
+    #ico {
+        flex-direction: row;
+    }
 }
 
 @media  screen and (min-width: 992px) {
