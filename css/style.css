@@ -48,18 +48,18 @@
     display: none;
 }
 .left-bar .nav-item {
-    margin: 10px 0px;
+    margin: 5px 0px;
     display: flex;
     align-self:center ;
 
 }
 .left-bar .nav-item img{
     width: 30px;
+    color: grey;
 }
 
 #playlist {
     display: none;
-    
 }
 
 #download img{
@@ -107,7 +107,6 @@
 }
 
 
-
 /* ******** main ******** */
 
 .container-main {
@@ -117,7 +116,42 @@
     float: right;
     width: 100%;
     overflow: auto;
+    background-color: rgb(20,25,34);
 }
+
+#main-top nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#main-top nav li:nth-child(1){
+    position: relative;
+}
+
+#main-top  nav #border-b {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    width: 50%;
+    border-bottom:2px solid rgb(173, 255, 47);
+}
+
+
+#main-top nav li {
+    list-style: none;
+    line-height: 30px;
+    margin: 10px 15px;
+}
+
+#main-top nav a {
+    text-decoration: none;
+    color: grey;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+
 
 
 /* ******** footer ******** */
@@ -258,15 +292,19 @@ i {
     #logo {
         display: block;
         width: 150px;
+        margin-bottom: 10px;
     }
     #home a, #search a, #library a {
         margin-left: 10px;
+        font-size: 15px;
     } 
+
     .left-bar .nav-item a {
         display: inline;
     }
 
     #home {
+        padding-left: 10px;
         border-left: 3px solid rgb(173, 255, 47);
     }
     #playlist {
@@ -277,13 +315,19 @@ i {
         font-size: 17px;
         text-transform: uppercase;
     }
+
+    #crea-playlist a {
+       font-size: 15px;
+    }
     #playlist nav li {
-        margin-top: 25px;
+        margin-top: 20px;
+        font-size: 12px;
     }
     
     #playlist nav li i{
         background-color: grey;
         padding: 5px;
+        font-size: 15px;
     }
     
     #download a {
@@ -335,11 +379,11 @@ i {
     background-color: blue;
 } */
 
-.debug .container-main {
+/* .debug .container-main {
     background-color: red;
 }
 
 .debug .container-footer {
 
-    /* background-color: green; */
-}
+    background-color: green;
+} */
