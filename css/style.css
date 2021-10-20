@@ -47,12 +47,21 @@
     text-decoration: none;
     display: none;
 }
+
+.left-bar .nav-item a:hover {
+    color: white;
+}
+
 .left-bar .nav-item {
     margin: 5px 0px;
     display: flex;
     align-self:center ;
-
 }
+
+.left-bar #download a:hover {
+    color: white;
+}
+
 .left-bar .nav-item img{
     width: 30px;
     color: grey;
@@ -72,7 +81,6 @@
     background-color: grey;
     border-radius: 50%;
 }
-
 
 #logo {
     display: none;
@@ -94,7 +102,10 @@
     justify-content: end;
     align-items: center;
 }
+.container-header #btn-header:hover {
+    transform: scale(1.1);
 
+}
 .container-header .btn-conatiner a {
     padding: 10px 40px;
     text-decoration: none;
@@ -151,7 +162,9 @@
     font-size: 12px;
 }
 
-
+#main-top nav a:hover {
+    color: white;
+}
 
 .section {
     padding: 20px
@@ -189,7 +202,9 @@
     margin-top: 15px;
 }
 
-
+.section .box-container .hover-box {
+    position: relative;
+}
 .section .box img {
     width: 100%;
 }
@@ -197,6 +212,32 @@
 
 #artisti-piu-popolari img {
     border-radius: 50%;
+}
+
+
+.section .box .middle {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    z-index: 1;
+}
+
+
+.section .box .middle-ico {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.section .box .middle:hover {
+    opacity: 0.5;
 }
 
 
@@ -235,13 +276,19 @@ i {
     font-size: 12px;
 }
 
-.container-footer .element h5 , .container-footer .element h4 {
+.container-footer .element h4 , .container-footer .element a {
     margin-left: 10px;
 
 }
-.container-footer .element h5 {
+.container-footer .element a {
     color: grey;
+    font-size: 10px;
+    text-decoration: none;
+}
 
+.container-footer .element a:hover{
+    text-decoration: underline;
+    color: white;
 }
 #ico {
     display: flex;
@@ -254,6 +301,11 @@ i {
     margin-left: 15px;
     color: grey;
 }
+
+#ico i:hover {
+    color:white
+}
+
 
 .central-footer .row-top {
     display: flex;
@@ -269,7 +321,10 @@ i {
 .central-footer .row-top #play {
     font-size: 25px;
 }
+.central-footer .row-top #play:hover {
+    transform: scale(1.3);
 
+}
 .central-footer .row-bottom {
     display: flex;
     margin-top: 15px;
@@ -280,11 +335,26 @@ i {
 .bar {
     border-radius: 25px;
     background-color: gray;
+    position:relative;
 }
+
 .white {
     border-radius: 25px;
     background-color: white;
     height: 3px;
+}
+
+.point {
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50% ;
+    /* opacity: 0; */
+}
+.central-footer .row-bottom .bar .point {
+    left: 29%;
+    top: -25%;
 }
 .central-footer .row-bottom .bar {
     margin: 7px 5px;
@@ -294,7 +364,9 @@ i {
 .central-footer .row-bottom .bar .white {
     width: 30%;
 }
-
+.white:hover {
+    background-color: rgb(173, 255, 47);
+}
 .central-footer .row-bottom h5 {
     width: 10%;
     margin: 0px 10px;
@@ -321,6 +393,10 @@ i {
 .side-footer.due .bar .white {
     width: 20%;
 }
+.side-footer.due .bar .point {
+    left: 19%;
+    top: -25%;
+}
 /* ******** mediaquery ******** */
 
 @media  screen and (min-width: 576px) {
@@ -338,6 +414,7 @@ i {
     }
 
     #logo {
+        margin-top: 10px;
         display: block;
         width: 150px;
         margin-bottom: 10px;
