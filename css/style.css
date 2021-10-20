@@ -153,6 +153,53 @@
 
 
 
+.section {
+    padding: 20px
+}
+
+.section h3{
+    color: white;
+}
+
+.section h5 {
+    color: grey;
+    margin-top: 10px;
+    font-size: 10px;
+
+}
+
+.section .box-container{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section .box-container .box{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 10px 10px;
+    width: 150px;
+    align-items: center;
+}
+
+
+.section .box-container .box h4 {
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+
+.section .box img {
+    width: 100%;
+}
+
+
+#artisti-piu-popolari img {
+    border-radius: 50%;
+}
+
+
 
 /* ******** footer ******** */
 
@@ -260,8 +307,9 @@ i {
 }
 
 .side-footer.due i{
-    margin: 0px 10px;
+    margin: 0px 5px;
     color: white;
+    font-size: 10px;
 }
 
 .side-footer.due .bar {
