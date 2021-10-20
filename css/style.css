@@ -13,13 +13,13 @@
 }
 
 .container {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
 }
 
 .left-bar {
     width: 50px;
     float: left;
-    height: calc(100vh - 100px);
+    height: 100%;
     display: flex;
     background-color: black;
     justify-content: space-between;
@@ -112,7 +112,7 @@
 
 .container-main {
     padding-top: 70px;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     margin-right: 0;
     float: right;
     width: 100%;
@@ -123,15 +123,18 @@
 /* ******** footer ******** */
 
 .container-footer {
-    height: 100px;
+    height: 80px;
     width: 100%;
     display: flex;
     padding: 20px 10px;
+    background-color: rgb(40,40,40);
 }
 
+i {
+    font-size: 14px;
+}
 .container-footer .side-footer {
     width: 30%;
-    background-color: blue;
     height: 100%;
     display: flex;
 }
@@ -139,7 +142,6 @@
 .container-footer .central-footer {
     width: 40%;
     height: 100%;
-    background-color: grey;
 }
 
 .container-footer .side-footer img {
@@ -189,7 +191,9 @@
 
 .central-footer .row-bottom {
     display: flex;
-    margin-top: 10px;
+    margin-top: 15px;
+    font-size: 10px;
+    align-items: center;
 }
 
 .bar {
@@ -216,9 +220,25 @@
     color: white;
 }
 
+.side-footer.due {
+    justify-content: end;
+    align-items: center;
+}
+
+.side-footer.due i{
+    margin: 0px 10px;
+    color: white;
+}
+
+.side-footer.due .bar {
+    width: 120px;
+    margin: 0px 5px;
+}
 
 
-
+.side-footer.due .bar .white {
+    width: 20%;
+}
 /* ******** mediaquery ******** */
 
 @media  screen and (min-width: 576px) {
@@ -321,5 +341,5 @@
 
 .debug .container-footer {
 
-    background-color: green;
+    /* background-color: green; */
 }
